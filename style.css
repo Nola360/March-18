@@ -33,6 +33,14 @@ body {
   color: #644def;
 }
 
+/* ul {
+  margin-left: 0px;
+} */
+
+.left li i{
+  margin-left: 10px;
+}
+
 .wrapper .navbar .left ul,
 .wrapper .navbar .right ul li a {
   display: flex;
@@ -57,5 +65,32 @@ body {
   position: relative;
 }
 
+.wrapper .navbar .right ul li .dropdown {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: none;
+  transition: display .3s ease;
+}
 
+.wrapper .navbar .right ul li .dropdown .fas {
+  margin-right: 10px;
+}
 
+.wrapper .navbar .right ul li .dropdown:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.wrapper .navbar .right ul li.active .dropdown {
+  display: block;
+  
+}
